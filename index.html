@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Nova Mert Ali | Kişisel Portfolyo</title>
+  <meta name="description" content="Nova Mert Ali'nin kişisel portfolyosu: yazılım, Minecraft, piksel tasarımı ve Rubik küp projeleri.">
+  <meta name="keywords" content="Nova Mert Ali, Nova, Mert Ali, kişisel portfolyo, yazılım projeleri, Minecraft, Rubik küp, CFOP">
+  <meta name="author" content="Nova Mert Ali">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#070a12">
+  <meta property="og:locale" content="tr_TR">
+  <link rel="canonical" href="https://lnova0.github.io/nova-mert-ali-portfolio/">
+  
+  <meta property="og:title" content="Nova Mert Ali | Kişisel Portfolyo">
+  <meta property="og:description" content="Yazılım, Minecraft, piksel tasarımı ve Rubik küp projeleri.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lnova0.github.io/nova-mert-ali-portfolio/">
+  <meta name="twitter:card" content="summary">
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Nova Mert Ali",
+      "url": "https://lnova0.github.io/nova-mert-ali-portfolio/",
+      "description": "Yazılım, Minecraft, piksel tasarımı ve Rubik küp projeleriyle ilgilenen kişisel portfolyo sahibi.",
+      "knowsAbout": ["Yazılım", "Minecraft", "Piksel tasarımı", "Rubik küp"]
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-primary: #070a12;
+      --bg-secondary: #0f172a;
+      --bg-card: rgba(15, 23, 42, 0.75);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(99, 102, 241, 0.4);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent-blue: #3b82f6;
+      --accent-purple: #8b5cf6;
+      --accent-indigo: #6366f1;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-yellow: #fbbf24;
+      --accent-red: #ef4444;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.15) 0%, transparent 40%);
+      background-attachment: fixed;
+    }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Header Nav */
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(16px);
+      background: rgba(7, 10, 18, 0.85);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .nav-container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+    .brand-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-main); font-weight: 800; font-size: 1.35rem; }
+    .brand-badge { background: linear-gradient(135deg, var(--accent-indigo), var(--accent-purple)); color: #fff; padding: 0.2rem 0.6rem; border-radius: 8px; font-size: 0.85rem; font-family: var(--font-mono); }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; }
+    .nav-links a { color: var(--text-muted); text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--text-main); }
+    
+    .yt-btn {
+      background: linear-gradient(135deg, #ff0000, #cc0000);
+      color: #fff !important;
+      padding: 0.45rem 1rem;
+      border-radius: 9999px;
+      font-weight: 600 !important;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 14px rgba(255, 0, 0, 0.35);
+      transition: transform 0.2s, box-shadow 0.2s !important;
+    }
+    .yt-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+    }
+
+    /* Hero Section */
+    .hero { padding: 5rem 0 3rem; }
+    .hero-title { font-size: 3.2rem; font-weight: 800; line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 1rem; }
+    .gradient-text { background: linear-gradient(135deg, #818cf8, #c084fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hero-tagline { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem; max-width: 650px; }
+    .tag-group { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .tag { background: rgba(255, 255, 255, 0.05); border: 1px solid var(--border-color); padding: 0.4rem 0.9rem; border-radius: 9999px; font-size: 0.85rem; color: var(--text-muted); }
+
+    /* Sections & Cards */
+    section { padding: 4rem 0; }
+    .section-header { margin-bottom: 2.5rem; }
+    .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .section-subtitle { color: var(--text-muted); font-size: 0.95rem; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.75rem;
+      backdrop-filter: blur(12px);
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover { transform: translateY(-4px); border-color: var(--border-accent); }
+
+    /* Timeline */
+    .timeline { position: relative; padding-left: 2rem; }
+    .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--accent-indigo), var(--accent-purple)); }
+    .timeline-item { position: relative; margin-bottom: 2rem; }
+    .timeline-item::before { content: ''; position: absolute; left: -2rem; top: 0.35rem; transform: translateX(-50%); width: 12px; height: 12px; border-radius: 50%; background: var(--accent-indigo); border: 3px solid var(--bg-primary); }
+    .timeline-badge { display: inline-block; font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-indigo); background: rgba(99, 102, 241, 0.15); padding: 0.2rem 0.6rem; border-radius: 6px; margin-bottom: 0.5rem; font-weight: 700; }
+
+    /* Rubik Timer & Lap System */
+    .timer-container { text-align: center; padding: 2.5rem 1.5rem; }
+    .scramble-box { font-family: var(--font-mono); background: rgba(0, 0, 0, 0.4); padding: 1rem; border-radius: 10px; font-size: 1.1rem; color: var(--accent-amber); margin-bottom: 1.5rem; }
+    .timer-display { font-family: var(--font-mono); font-size: 4.5rem; font-weight: 700; margin: 1rem 0; user-select: none; }
+    .timer-display.ready { color: var(--accent-emerald); }
+    .timer-display.running { color: var(--accent-blue); }
+    .timer-actions { display: flex; justify-content: center; gap: 10px; margin-bottom: 1rem; }
+    .lap-btn { background: rgba(255,255,255,0.1); border: 1px solid var(--border-color); color: #fff; padding: 6px 16px; border-radius: 8px; cursor: pointer; font-family: var(--font-mono); font-size: 0.85rem; }
+    .lap-btn:hover { background: var(--accent-indigo); }
+    .laps-list { max-height: 120px; overflow-y: auto; background: rgba(0,0,0,0.2); border-radius: 8px; padding: 8px; margin-top: 1rem; text-align: left; font-family: var(--font-mono); font-size: 0.8rem; }
+    .lap-item { display: flex; justify-content: space-between; padding: 4px 8px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .timer-stats { display: flex; justify-content: center; gap: 2rem; margin-top: 1.5rem; font-family: var(--font-mono); font-size: 0.9rem; color: var(--text-muted); }
+
+    /* FLOATING BUTTONS */
+    .floating-btn {
+      position: fixed; bottom: 24px; z-index: 100;
+      width: 60px; height: 60px; border-radius: 50%;
+      border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .floating-btn:hover { transform: scale(1.08); }
+
+    /* Verity site asistanı */
+    #verity-btn {
+      left: 24px;
+      background: linear-gradient(135deg, #f59e0b, #fbbf24);
+      box-shadow: 0 8px 24px rgba(245, 158, 11, 0.5);
+    }
+    .yellow-face {
+      width: 36px; height: 36px;
+      background: #fbbf24;
+      border-radius: 50%;
+      position: relative;
+      display: flex; justify-content: center; align-items: center;
+    }
+    .eye {
+      width: 6px; height: 8px;
+      background: #000;
+      border-radius: 50%;
+      position: absolute; top: 10px;
+    }
+    .eye.left { left: 8px; }
+    .eye.right { right: 8px; }
+    .mouth {
+      width: 14px; height: 7px;
+      border-bottom: 3px solid #000;
+      border-radius: 0 0 10px 10px;
+      position: absolute; bottom: 8px;
+    }
+
+    #dino-btn { right: 24px; background: linear-gradient(135deg, #10b981, #059669); box-shadow: 0 8px 24px rgba(16, 185, 129, 0.4); color: #fff; font-size: 1.5rem; }
+
+    /* MODAL POPUPS */
+    .popup-modal {
+      position: fixed; bottom: 96px; z-index: 99;
+      width: 380px; background: #0f172a; border: 1px solid var(--border-accent);
+      border-radius: 20px; padding: 1.25rem; box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+      display: none; flex-direction: column; backdrop-filter: blur(20px);
+      transition: width 0.3s, height 0.3s, top 0.3s, left 0.3s, bottom 0.3s;
+    }
+    .popup-modal.active { display: flex; }
+    .popup-modal.maximized {
+      top: 20px !important; bottom: 20px !important;
+      left: 20px !important; right: 20px !important;
+      width: calc(100vw - 40px) !important;
+      height: calc(100vh - 40px) !important;
+      z-index: 999;
+    }
+    .popup-modal.maximized .chat-box { height: calc(100vh - 220px) !important; }
+
+    #verity-modal { left: 24px; }
+    #dino-modal { right: 24px; }
+
+    .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.75rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem; }
+    .header-controls { display: flex; gap: 8px; align-items: center; }
+    .ctrl-btn { background: rgba(255,255,255,0.08); border: 1px solid var(--border-color); color: var(--text-muted); border-radius: 6px; width: 26px; height: 26px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; }
+    .ctrl-btn:hover { color: #fff; border-color: var(--accent-yellow); background: rgba(255,255,255,0.15); }
+    .close-btn { background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer; }
+
+    /* Verity chat UI */
+    .chat-box { height: 230px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; margin-bottom: 10px; padding-right: 4px; }
+    .msg-wrapper { display: flex; flex-direction: column; max-width: 88%; }
+    .msg-wrapper.bot { align-self: flex-start; }
+    .msg-wrapper.user { align-self: flex-end; }
+    
+    .msg { padding: 8px 12px; border-radius: 12px; font-size: 0.85rem; line-height: 1.45; }
+    .msg-wrapper.bot .msg { background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.3); color: #fef08a; }
+    .msg-wrapper.user .msg { background: var(--accent-indigo); color: #fff; }
+    
+    .msg-actions { display: flex; gap: 6px; margin-top: 4px; }
+    .action-chip { background: rgba(255,255,255,0.06); border: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.7rem; padding: 2px 6px; border-radius: 6px; cursor: pointer; display: flex; align-items: center; gap: 3px; }
+    .action-chip:hover { color: var(--accent-yellow); border-color: var(--accent-yellow); }
+
+    .quick-questions { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 6px; margin-bottom: 8px; }
+    .chip { background: rgba(255,255,255,0.08); border: 1px solid var(--border-color); color: var(--text-muted); font-size: 0.75rem; padding: 4px 8px; border-radius: 12px; cursor: pointer; white-space: nowrap; }
+    .chip:hover { border-color: var(--accent-yellow); color: #fff; }
+    .input-box { display: flex; gap: 6px; }
+    .input-box input { flex: 1; background: rgba(0,0,0,0.3); border: 1px solid var(--border-color); border-radius: 10px; padding: 8px 12px; color: #fff; font-size: 0.85rem; outline: none; }
+    .input-box button { background: var(--accent-amber); border: none; color: #000; padding: 0 14px; border-radius: 10px; cursor: pointer; font-weight: 700; }
+
+    /* Dino Canvas */
+    canvas#dinoCanvas { background: #f7f7f7; border-radius: 8px; width: 100%; height: 160px; cursor: pointer; }
+
+    footer { border-top: 1px solid var(--border-color); padding: 2.5rem 0; margin-top: 4rem; text-align: center; color: var(--text-muted); font-size: 0.9rem; }
+
+    @media (max-width: 768px) {
+      .grid-3 { grid-template-columns: 1fr; }
+      .hero-title { font-size: 2.2rem; }
+      .nav-container { height: auto; min-height: 70px; padding-top: 0.75rem; padding-bottom: 0.75rem; flex-direction: column; gap: 0.75rem; }
+      .nav-links { justify-content: center; flex-wrap: wrap; gap: 0.75rem 1rem; }
+      .popup-modal { right: 12px !important; left: 12px !important; width: auto !important; max-width: none; }
+      .timer-display { font-size: clamp(2.5rem, 12vw, 4.5rem); }
+      .timer-stats { gap: 0.75rem; flex-wrap: wrap; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Nav -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <span class="brand-badge">NOVA</span>
+        <span>Nova Mert Ali</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#hobbies">Uzmanlıklar</a></li>
+        <li><a href="#timer">CFOP Timer</a></li>
+        <!-- KANALA BİREBİR BAĞLI YOUTUBE BUTONU -->
+        <li>
+          <a href="https://www.youtube.com/channel/UCPN2eFSvC5q1ZqGn8AGIYuw" target="_blank" rel="noopener noreferrer" class="yt-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            YouTube Kanalım
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <h1 class="hero-title">Nova Mert Ali<br><span class="gradient-text">Kişisel Portfolyo</span></h1>
+      <p class="hero-tagline">
+        Yazılım, oyunlar ve yaratıcı projeler etrafında şekillenen çalışmalarım.
+      </p>
+      <div class="tag-group">
+        <span class="tag">🟡 Verity demo asistanı</span>
+        <span class="tag">🎮 sesisi_0 SMP</span>
+        <span class="tag">🧩 CFOP Speedcuber</span>
+        <span class="tag">🎨 Pixel Artist</span>
+        <span class="tag">🎴 Pokémon TCG</span>
+      </div>
+    </section>
+
+    <!-- Özgeçmiş -->
+    <section id="about">
+      <div class="section-header">
+        <h2 class="section-title">Hakkımda</h2>
+        <p class="section-subtitle">Nelerle ilgilendiğime ve üzerinde çalıştığım alanlara göz at</p>
+      </div>
+
+      <div class="timeline card">
+        <div class="timeline-item">
+          <span class="timeline-badge">İLGİ ALANLARI</span>
+          <h3 style="font-size: 1.2rem; font-weight:600;">Öğrenme ve üretme</h3>
+          <p style="color: var(--text-muted); font-size:0.95rem;">
+            Yeni şeyler öğrenmeyi; yazılım, mantık bulmacaları ve grafik tasarım projeleriyle denemeler yapmayı seviyorum.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-badge">ÜRETİM ODAKLI</span>
+          <h3 style="font-size: 1.2rem; font-weight:600;">Projeler ve hobiler</h3>
+          <p style="color: var(--text-muted); font-size:0.95rem;">
+            Minecraft, piksel tasarımı ve Rubik küp gibi alanlarda küçük projeler geliştirip paylaşmayı hedefliyorum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Uzmanlıklar -->
+    <section id="hobbies">
+      <div class="section-header">
+        <h2 class="section-title">Uzmanlık & Projeler</h2>
+        <p class="section-subtitle">Teknoloji, oyun modlama ve koleksiyon alanlarım</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎴</div>
+          <h3 style="font-weight:700; margin-bottom: 0.5rem;">Pokémon TCG</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Fiziksel ve dijital kart koleksiyonculuğu, PSA 10 derecelendirme incelemeleri ve TCG ONE platformu stratejileri.
+          </p>
+        </div>
+        <div class="card">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎨</div>
+          <h3 style="font-weight:700; margin-bottom: 0.5rem;">Piksel & Grafik Tasarım</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            MCreator 64x32 zırh ve özel eşya dokuları (Lava Pickaxe), Pisutonenya amblemleri ve logo çalışmaları.
+          </p>
+        </div>
+        <div class="card">
+          <div style="font-size: 2rem; margin-bottom: 0.5rem;">💻</div>
+          <h3 style="font-weight:700; margin-bottom: 0.5rem;">Minecraft & Betik Yazılımı</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            "sesisi_0 SMP" sunucu yönetimi, Python ve Windows PowerShell otomasyon betikleri.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tur Takipli Rubik Küp Timer -->
+    <section id="timer">
+      <div class="section-header">
+        <h2 class="section-title">CFOP Speedcubing Kronometresi</h2>
+        <p class="section-subtitle">3x3 Rubik Küp antrenmanı için canlı scramble ve Tur (Lap) takibi</p>
+      </div>
+
+      <div class="card timer-container">
+        <div class="scramble-box" id="scramble">Yükleniyor...</div>
+        <div class="timer-display" id="timerDisplay">0.000</div>
+        
+        <div class="timer-actions">
+          <button class="lap-btn" onclick="addLap()">+ Tur / Aşama Kaydet</button>
+        </div>
+
+        <div class="laps-list" id="lapsList">
+          <div style="color:var(--text-muted); text-align:center;">Henüz kaydedilmiş tur yok.</div>
+        </div>
+
+        <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 1rem;">
+          Süreyi başlatmak için <b>SPACE (Boşluk)</b> tuşuna basılı tutun ve bırakın.
+        </p>
+        
+        <div class="timer-stats">
+          <div>En İyi (PB): <span style="color:#fff; font-weight:700;" id="statPB">--</span></div>
+          <div>Ao5: <span style="color:#fff; font-weight:700;" id="statAo5">--</span></div>
+          <div>Çözüm: <span style="color:#fff; font-weight:700;" id="statCount">0</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Nova Mert Ali. Kişisel portfolyo.</p>
+    </div>
+  </footer>
+
+  <!-- SOL ALT KÖŞE: Verity demo asistanı -->
+  <button id="verity-btn" class="floating-btn" title="Verity site asistanını aç" aria-label="Verity site asistanını aç">
+    <div class="yellow-face">
+      <div class="eye left"></div>
+      <div class="eye right"></div>
+      <div class="mouth"></div>
+    </div>
+  </button>
+
+  <div id="verity-modal" class="popup-modal">
+    <div class="modal-header">
+      <span style="font-weight:700; font-size:0.9rem; color:#fbbf24; display:flex; align-items:center; gap:6px;">
+        🟡 Verity — Site Asistanı (Demo)
+      </span>
+      <div class="header-controls">
+        <button class="ctrl-btn" onclick="clearChat()" title="Sohbeti Temizle">🗑️</button>
+        <button class="ctrl-btn" onclick="toggleMaximize()" title="Büyüt / Küçült">🔲</button>
+        <button class="close-btn" id="verityClose">&times;</button>
+      </div>
+    </div>
+    <div class="chat-box" id="chatBox">
+      <div class="msg-wrapper bot">
+        <div class="msg">Merhaba! Ben Verity, bu portfolyo için hazırlanmış basit bir demo asistanıyım. Önceden tanımlı konularda yardımcı olabilirim; harici bir yapay zekâ servisine bağlı değilim.</div>
+        <div class="msg-actions">
+          <span class="action-chip" onclick="speakText(this)">🔊 Oku</span>
+          <span class="action-chip" onclick="copyText(this)">📋 Kopyala</span>
+        </div>
+      </div>
+    </div>
+    <div class="quick-questions">
+      <span class="chip" onclick="askAI('Çeviri özelliği var mı?')">Çeviri hakkında</span>
+      <span class="chip" onclick="askAI('25 * 4 / 2')">Matematik</span>
+      <span class="chip" onclick="askAI('Nova Mert Ali kimdir?')">Nova Mert Ali kimdir?</span>
+    </div>
+    <div class="input-box">
+      <input type="text" id="userInput" placeholder="Proje veya CFOP hakkında sor..." aria-label="Asistana mesaj yaz" onkeydown="if(event.key==='Enter') sendAI();">
+      <button onclick="sendAI()">Gönder</button>
+    </div>
+  </div>
+
+  <!-- SAĞ ALT KÖŞE: Dino mini oyunu -->
+  <button id="dino-btn" class="floating-btn" title="Dino mini oyununu aç" aria-label="Dino mini oyununu aç">🦖</button>
+
+  <div id="dino-modal" class="popup-modal">
+    <div class="modal-header">
+      <span style="font-weight:700; font-size:0.9rem; color:#10b981;">🦖 Google Chrome Dino Game (Orijinal Fizik)</span>
+      <button class="close-btn" id="dinoClose">&times;</button>
+    </div>
+    <canvas id="dinoCanvas" width="340" height="160"></canvas>
+    <div style="font-size: 0.75rem; color: var(--text-muted); text-align: center; margin-top: 0.5rem;">
+      Zıplamak için <b>SPACE / YUKARI</b>, Eğilmek için <b>AŞAĞI ARROW</b>.
+    </div>
+  </div>
+
+  <script>
+    /* ==========================================
+       1. DEMO ASİSTAN, MATEMATİK VE PORTFOLYO YANITLARI
+       ========================================== */
+    const verityBtn = document.getElementById('verity-btn');
+    const verityModal = document.getElementById('verity-modal');
+    const verityClose = document.getElementById('verityClose');
+    const chatBox = document.getElementById('chatBox');
+    const userInput = document.getElementById('userInput');
+
+    verityBtn.addEventListener('click', () => { verityModal.classList.toggle('active'); });
+    verityClose.addEventListener('click', () => { verityModal.classList.remove('active'); });
+
+    function toggleMaximize() {
+      verityModal.classList.toggle('maximized');
+    }
+
+    function appendMessage(text, role) {
+      const wrapper = document.createElement('div');
+      wrapper.className = `msg-wrapper ${role}`;
+
+      const message = document.createElement('div');
+      message.className = 'msg';
+      message.textContent = text;
+      wrapper.appendChild(message);
+
+      if (role === 'bot') {
+        const actions = document.createElement('div');
+        actions.className = 'msg-actions';
+        [
+          ['🔊 Oku', speakText],
+          ['📋 Kopyala', copyText]
+        ].forEach(([label, handler]) => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'action-chip';
+          button.textContent = label;
+          button.addEventListener('click', () => handler(button));
+          actions.appendChild(button);
+        });
+        wrapper.appendChild(actions);
+      }
+
+      chatBox.appendChild(wrapper);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function clearChat() {
+      chatBox.textContent = '';
+      appendMessage('Sohbet geçmişi temizlendi! Yeniden soru sorabilirsin.', 'bot');
+    }
+
+    function speakText(btn) {
+      const txt = btn.closest('.msg-wrapper').querySelector('.msg').textContent;
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(txt);
+        utterance.lang = 'tr-TR';
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert('Tarayıcınız sesli okumayı desteklemiyor.');
+      }
+    }
+
+    function copyText(btn) {
+      const txt = btn.closest('.msg-wrapper').querySelector('.msg').textContent;
+      navigator.clipboard.writeText(txt).then(() => {
+        const originalText = btn.innerHTML;
+        btn.innerHTML = '✓ Kopyalandı';
+        btn.style.color = '#10b981';
+        btn.style.borderColor = '#10b981';
+        setTimeout(() => {
+          btn.innerHTML = originalText;
+          btn.style.color = '';
+          btn.style.borderColor = '';
+        }, 1500);
+      });
+    }
+
+    // Önceden tanımlı yanıtlar; bu demo harici bir yapay zekâ servisine bağlı değildir.
+    const aiEngine = [
+      { keywords: ['kimdir', 'kim', 'nova mert ali', 'biyografi'], reply: 'Nova Mert Ali; yazılım, Minecraft, piksel tasarımı ve Rubik küp projeleriyle ilgileniyor. Bu sayfada kişisel projelerini ve denemelerini paylaşıyor.' },
+      { keywords: ['minecraft', 'smp', 'sesisi_0', 'server'], reply: 'Minecraft modlama, sunucu projeleri ve özel eşya dokuları bu portfolyodaki ilgi alanları arasında.' },
+      { keywords: ['rubik', 'küp', 'cfop', 'timer'], reply: 'CFOP Metodu 4 adımdan oluşur: 1. Cross (Haç), 2. F2L (İlk İki Katman), 3. OLL (Üst Sarı Yüzey), 4. PLL (Son Katman Köşe ve Kenarları).' },
+      { keywords: ['yazılım', 'kodlama', 'kod', 'python'], reply: 'Yazılım öğrenmek problem çözme yeteneğini geliştirir! HTML, CSS ve JavaScript web siteleri için; Python ve PowerShell ise otomasyon ve mantık betikleri için idealdir.' },
+      { keywords: ['çevir', 'translation', 'tercüme'], reply: 'Bu site asistanı bir demodur; gerçek çeviri veya çevrim içi yapay zekâ hizmeti sunmaz.' },
+      { keywords: ['selam', 'merhaba', 'sa', 'hey'], reply: 'Merhaba! Ben Verity, bu portfolyonun basit demo asistanıyım. Projeler veya CFOP hakkında soru sorabilirsin.' }
+    ];
+
+    function evaluateMath(expression) {
+      try {
+        let clean = expression
+          .replace(/x/g, '*')
+          .replace(/,/g, '.')
+          .replace(/sqrt\(([^)]+)\)/g, 'Math.sqrt($1)')
+          .replace(/(\d+)\^(\d+)/g, 'Math.pow($1, $2)');
+        
+        if (!/^[0-9+\-*/.() \tMath.sqrtpow]+$/.test(clean)) return null;
+        let res = Function('"use strict"; return (' + clean + ')')();
+        if (typeof res === 'number' && !isNaN(res)) return res;
+      } catch (e) {
+        return null;
+      }
+      return null;
+    }
+
+    function handleTranslation(text) {
+      let lower = text.toLowerCase();
+      if (lower.includes('çevir') || lower.includes('translation') || lower.includes('tercüme')) {
+        return 'Bu site asistanı bir demodur; gerçek çeviri hizmeti sunmaz.';
+      }
+      return null;
+    }
+
+    function askAI(q) { userInput.value = q; sendAI(); }
+
+    function sendAI() {
+      const txt = userInput.value.trim();
+      if (!txt) return;
+
+      appendMessage(txt, 'user');
+      userInput.value = '';
+
+      setTimeout(() => {
+        let answer = "";
+        let translationResult = handleTranslation(txt);
+
+        if (translationResult) {
+          answer = translationResult;
+        } else {
+          let mathResult = evaluateMath(txt);
+          if (mathResult !== null) {
+            answer = `📊 Matematik İşlemi Sonucu: ${txt} = ${mathResult}`;
+          } else {
+            let lower = txt.toLowerCase();
+            for (let item of aiEngine) {
+              if (item.keywords.some(k => lower.includes(k))) {
+                answer = item.reply;
+                break;
+              }
+            }
+          }
+        }
+
+        if (!answer) {
+          answer = 'Bu demo asistan bu konuda hazır bir yanıta sahip değil. Projeler veya CFOP hakkında soru sorabilirsin.';
+        }
+
+        appendMessage(answer, 'bot');
+      }, 300);
+    }
+
+    /* ==========================================
+       2. CFOP RUBİK KÜP TIMER & TUR (LAP) SİSTEMİ
+       ========================================== */
+    const scrambleEl = document.getElementById('scramble');
+    const timerDisplay = document.getElementById('timerDisplay');
+    const statPB = document.getElementById('statPB');
+    const statAo5 = document.getElementById('statAo5');
+    const statCount = document.getElementById('statCount');
+    const lapsList = document.getElementById('lapsList');
+
+    let solves = [];
+    let currentLaps = [];
+    let timerState = 'IDLE';
+    let startTime = 0;
+    let timerInterval = null;
+
+    const moves = ["U", "D", "L", "R", "F", "B"];
+    const modifiers = ["", "'", "2"];
+
+    function generateScramble() {
+      let scramble = [];
+      let lastMove = "";
+      for (let i = 0; i < 20; i++) {
+        let move;
+        do { move = moves[Math.floor(Math.random() * moves.length)]; } while (move === lastMove);
+        lastMove = move;
+        scramble.push(move + modifiers[Math.floor(Math.random() * modifiers.length)]);
+      }
+      scrambleEl.textContent = scramble.join(" ");
+    }
+
+    function addLap() {
+      if (timerState !== 'RUNNING') return;
+      const now = Date.now();
+      const lapTime = ((now - startTime) / 1000).toFixed(3);
+      currentLaps.push(lapTime);
+      renderLaps();
+    }
+
+    function renderLaps() {
+      if (currentLaps.length === 0) {
+        lapsList.innerHTML = `<div style="color:var(--text-muted); text-align:center;">Henüz kaydedilmiş tur yok.</div>`;
+        return;
+      }
+      lapsList.innerHTML = currentLaps.map((l, i) => `
+        <div class="lap-item">
+          <span>Tur ${i + 1}</span>
+          <span style="color:var(--accent-yellow);">${l}s</span>
+        </div>
+      `).join('');
+    }
+
+    function updateStats() {
+      statCount.textContent = solves.length;
+      if (solves.length === 0) return;
+      const min = Math.min(...solves);
+      statPB.textContent = (min / 1000).toFixed(3) + "s";
+      if (solves.length >= 5) {
+        let last5 = solves.slice(-5).sort((a, b) => a - b);
+        let sum = last5[1] + last5[2] + last5[3];
+        statAo5.textContent = ((sum / 3) / 1000).toFixed(3) + "s";
+      }
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.code !== 'Space' || e.repeat) return;
+      if (dinoModal.classList.contains('active') || verityModal.classList.contains('active')) return;
+      e.preventDefault();
+
+      if (timerState === 'RUNNING') {
+        clearInterval(timerInterval);
+        const elapsed = Date.now() - startTime;
+        solves.push(elapsed);
+        timerDisplay.textContent = (elapsed / 1000).toFixed(3);
+        timerState = 'IDLE';
+        timerDisplay.className = 'timer-display';
+        generateScramble();
+        updateStats();
+      } else if (timerState === 'IDLE') {
+        currentLaps = [];
+        renderLaps();
+        timerState = 'HOLDING';
+        timerDisplay.className = 'timer-display ready';
+      }
+    });
+
+    window.addEventListener('keyup', (e) => {
+      if (e.code !== 'Space') return;
+      if (timerState === 'HOLDING') {
+        timerState = 'RUNNING';
+        timerDisplay.className = 'timer-display running';
+        startTime = Date.now();
+        timerInterval = setInterval(() => {
+          timerDisplay.textContent = ((Date.now() - startTime) / 1000).toFixed(3);
+        }, 10);
+      }
+    });
+
+    generateScramble();
+
+    /* ==========================================
+       3. ORİJİNAL FİZİKLİ GOOGLE CHROME DINO GAME
+       ========================================== */
+    const dinoBtn = document.getElementById('dino-btn');
+    const dinoModal = document.getElementById('dino-modal');
+    const dinoClose = document.getElementById('dinoClose');
+    const canvas = document.getElementById('dinoCanvas');
+    const ctx = canvas.getContext('2d');
+
+    let isDinoActive = false;
+    let dinoAnimId = null;
+
+    let dino = {
+      x: 30, y: 110, w: 22, h: 26, dy: 0,
+      gravity: 0.6, jumpPower: -12, isGrounded: true, isDucking: false
+    };
+
+    let obstacles = [];
+    let frame = 0;
+    let score = 0;
+    let highScore = 0;
+    let isGameOver = false;
+    let gameSpeed = 3.2;
+
+    dinoBtn.addEventListener('click', () => {
+      dinoModal.classList.toggle('active');
+      if (dinoModal.classList.contains('active')) {
+        isDinoActive = true;
+        resetDinoGame();
+        dinoLoop();
+      } else {
+        isDinoActive = false;
+        cancelAnimationFrame(dinoAnimId);
+      }
+    });
+
+    dinoClose.addEventListener('click', () => {
+      dinoModal.classList.remove('active');
+      isDinoActive = false;
+      cancelAnimationFrame(dinoAnimId);
+    });
+
+    function resetDinoGame() {
+      dino.y = 110; dino.h = 26; dino.dy = 0; dino.isGrounded = true; dino.isDucking = false;
+      obstacles = []; frame = 0; score = 0; gameSpeed = 3.2; isGameOver = false;
+    }
+
+    function handleJump() {
+      if (isGameOver) { resetDinoGame(); return; }
+      if (dino.isGrounded) { dino.dy = dino.jumpPower; dino.isGrounded = false; }
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (!dinoModal.classList.contains('active')) return;
+      if (e.code === 'Space' || e.code === 'ArrowUp') { e.preventDefault(); handleJump(); }
+      else if (e.code === 'ArrowDown' || e.code === 'KeyS') {
+        e.preventDefault();
+        if (dino.isGrounded) { dino.isDucking = true; dino.h = 16; dino.y = 120; }
+        else { dino.dy += 3.5; }
+      }
+    });
+
+    window.addEventListener('keyup', (e) => {
+      if (e.code === 'ArrowDown' || e.code === 'KeyS') {
+        dino.isDucking = false; dino.h = 26; dino.y = 110;
+      }
+    });
+
+    canvas.addEventListener('click', handleJump);
+
+    function drawDino(x, y, w, h, isNight, isDucking, isGrounded, animFrame) {
+      ctx.fillStyle = isNight ? '#34d399' : '#535353';
+      
+      if (isDucking) {
+        ctx.fillRect(x, y + 4, w + 8, h - 4);
+        ctx.fillStyle = isNight ? '#000' : '#fff';
+        ctx.fillRect(x + w + 2, y + 6, 3, 3);
+      } else {
+        ctx.fillRect(x + 6, y, 14, 12);
+        ctx.fillRect(x, y + 8, 16, 12);
+        ctx.fillStyle = isNight ? '#000' : '#fff';
+        ctx.fillRect(x + 14, y + 2, 3, 3);
+
+        ctx.fillStyle = isNight ? '#34d399' : '#535353';
+        if (!isGrounded) {
+          ctx.fillRect(x + 2, y + 20, 4, 6);
+          ctx.fillRect(x + 10, y + 20, 4, 4);
+        } else if (Math.floor(animFrame / 6) % 2 === 0) {
+          ctx.fillRect(x + 2, y + 20, 4, 6);
+          ctx.fillRect(x + 10, y + 20, 4, 3);
+        } else {
+          ctx.fillRect(x + 2, y + 20, 4, 3);
+          ctx.fillRect(x + 10, y + 20, 4, 6);
+        }
+      }
+    }
+
+    function drawCactus(x, y, w, h, isNight) {
+      ctx.fillStyle = isNight ? '#60a5fa' : '#2d3436';
+      ctx.fillRect(x + 4, y, w - 8, h);
+      ctx.fillRect(x, y + 6, 4, 8);
+      ctx.fillRect(x + w - 4, y + 10, 4, 8);
+    }
+
+    function drawBird(x, y, w, h, isNight, animFrame) {
+      ctx.fillStyle = isNight ? '#f43f5e' : '#e74c3c';
+      ctx.fillRect(x + 4, y + 4, w - 8, h - 4);
+      let wingUp = Math.floor(animFrame / 8) % 2 === 0;
+      if (wingUp) {
+        ctx.fillRect(x + 8, y - 4, 6, 8);
+      } else {
+        ctx.fillRect(x + 8, y + 8, 6, 8);
+      }
+    }
+
+    function dinoLoop() {
+      if (!isDinoActive) return;
+
+      let isNight = Math.floor(score / 300) % 2 === 1;
+      ctx.fillStyle = isNight ? '#1e293b' : '#f7f7f7';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.strokeStyle = isNight ? '#475569' : '#535353';
+      ctx.lineWidth = 2;
+      ctx.beginPath(); ctx.moveTo(0, 136); ctx.lineTo(canvas.width, 136); ctx.stroke();
+
+      if (!isGameOver) {
+        frame++;
+        if (frame % 5 === 0) score++;
+        if (frame % 250 === 0) gameSpeed += 0.25;
+
+        dino.dy += dino.gravity;
+        dino.y += dino.dy;
+
+        let groundY = dino.isDucking ? 120 : 110;
+        if (dino.y >= groundY) { dino.y = groundY; dino.dy = 0; dino.isGrounded = true; }
+
+        if (frame % Math.floor(120 - gameSpeed * 2.5) === 0) {
+          let isBird = score > 180 && Math.random() < 0.3;
+          if (isBird) {
+            obstacles.push({ x: canvas.width, w: 22, h: 14, y: 92, type: 'bird' });
+          } else {
+            let isLarge = Math.random() < 0.4;
+            obstacles.push({ x: canvas.width, w: isLarge ? 18 : 14, h: isLarge ? 28 : 22, y: isLarge ? 108 : 114, type: 'cactus' });
+          }
+        }
+      }
+
+      drawDino(dino.x, dino.y, dino.w, dino.h, isNight, dino.isDucking, dino.isGrounded, frame);
+
+      for (let i = 0; i < obstacles.length; i++) {
+        let obs = obstacles[i];
+        if (!isGameOver) obs.x -= gameSpeed;
+
+        if (obs.type === 'bird') {
+          drawBird(obs.x, obs.y, obs.w, obs.h, isNight, frame);
+        } else {
+          drawCactus(obs.x, obs.y, obs.w, obs.h, isNight);
+        }
+
+        if (
+          dino.x + 2 < obs.x + obs.w &&
+          dino.x + dino.w - 2 > obs.x &&
+          dino.y + 2 < obs.y + obs.h &&
+          dino.y + dino.h > obs.y
+        ) {
+          isGameOver = true;
+          if (score > highScore) highScore = score;
+        }
+      }
+
+      if (obstacles.length > 0 && obstacles[0].x < -30) {
+        obstacles.shift();
+      }
+
+      ctx.fillStyle = isNight ? '#94a3b8' : '#666';
+      ctx.font = '11px "JetBrains Mono", monospace';
+      ctx.fillText(`HI ${highScore.toString().padStart(5, '0')}  ${score.toString().padStart(5, '0')}`, canvas.width - 130, 20);
+
+      if (isGameOver) {
+        ctx.fillStyle = isNight ? '#fff' : '#000';
+        ctx.font = 'bold 14px "Plus Jakarta Sans"';
+        ctx.fillText("GAME OVER", canvas.width / 2 - 40, 75);
+        ctx.font = '11px "Plus Jakarta Sans"';
+        ctx.fillText("Yeniden başlamak için Space'e bas", canvas.width / 2 - 85, 95);
+      }
+
+      dinoAnimId = requestAnimationFrame(dinoLoop);
+    }
+  </script>
+</body>
+</html>
