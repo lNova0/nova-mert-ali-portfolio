@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Nova Mert Ali | Kişisel Portfolyo</title>
-  <meta name="description" content="Nova Mert Ali'nin kişisel portfolyosu: yazılım, Minecraft, piksel tasarımı ve Rubik küp projeleri.">
-  <meta name="keywords" content="Nova Mert Ali, Nova, Mert Ali, kişisel portfolyo, yazılım projeleri, Minecraft, Rubik küp, CFOP">
+  <title>Nova Mert Ali | Kişisel Portfolyo ve Web Oyunları</title>
+  <meta name="description" content="Nova Mert Ali'nin kişisel portfolyosu: yazılım, Minecraft, piksel tasarımı, Rubik küp ve interaktif web oyunları.">
+  <meta name="keywords" content="Nova Mert Ali, Nova, Mert Ali, kişisel portfolyo, yazılım projeleri, Minecraft, Rubik küp, CFOP, web oyunları">
   <meta name="author" content="Nova Mert Ali">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="p4jWzkcD7e5No5OXoGkr6RykzarMk0EdTW81dFQVENs">
@@ -15,7 +15,7 @@
   <link rel="canonical" href="https://lnova0.github.io/nova-mert-ali-portfolio/">
   
   <meta property="og:title" content="Nova Mert Ali | Kişisel Portfolyo">
-  <meta property="og:description" content="Yazılım, Minecraft, piksel tasarımı ve Rubik küp projeleri.">
+  <meta property="og:description" content="Yazılım, Minecraft, piksel tasarımı, Rubik küp ve interaktif web oyunları.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lnova0.github.io/nova-mert-ali-portfolio/">
   <meta name="twitter:card" content="summary">
@@ -26,8 +26,8 @@
       "@type": "Person",
       "name": "Nova Mert Ali",
       "url": "https://lnova0.github.io/nova-mert-ali-portfolio/",
-      "description": "Yazılım, Minecraft, piksel tasarımı ve Rubik küp projeleriyle ilgilenen kişisel portfolyo sahibi.",
-      "knowsAbout": ["Yazılım", "Minecraft", "Piksel tasarımı", "Rubik küp"]
+      "description": "Yazılım, Minecraft, piksel tasarımı, Rubik küp ve interaktif web oyunlarıyla ilgilenen kişisel portfolyo sahibi.",
+      "knowsAbout": ["Yazılım", "Minecraft", "Piksel tasarımı", "Rubik küp", "Web oyunları"]
     }
   </script>
 
@@ -116,6 +116,7 @@
     .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 0.5rem; }
     .section-subtitle { color: var(--text-muted); font-size: 0.95rem; }
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .grid-games { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.25rem; }
 
     .card {
       background: var(--bg-card);
@@ -126,6 +127,39 @@
       transition: transform 0.2s, border-color 0.2s;
     }
     .card:hover { transform: translateY(-4px); border-color: var(--border-accent); }
+
+    /* Games Grid & Buttons */
+    .game-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+    }
+    .game-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      margin-top: 1rem;
+      padding: 0.6rem 1rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.2s, filter 0.2s;
+    }
+    .game-btn:hover { transform: translateY(-2px); filter: brightness(1.15); }
+    
+    .btn-nealfun { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+    .btn-computeit { background: linear-gradient(135deg, #10b981, #047857); }
+    .btn-interland { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
+    .btn-kumika { background: linear-gradient(135deg, #f59e0b, #d97706); }
+    .btn-blob { background: linear-gradient(135deg, #ec4899, #be185d); }
+    .btn-geo { background: linear-gradient(135deg, #06b6d4, #0e7490); }
+    .btn-pottery { background: linear-gradient(135deg, #f97316, #c2410c); }
+    .btn-silk { background: linear-gradient(135deg, #6366f1, #4338ca); }
+    .btn-mouse { background: linear-gradient(135deg, #ef4444, #b91c1c); }
 
     /* Timeline */
     .timeline { position: relative; padding-left: 2rem; }
@@ -157,7 +191,7 @@
     }
     .floating-btn:hover { transform: scale(1.08); }
 
-    /* Verity site asistanı */
+    /* SARI VERITY AI BOT BUTONU (GÖZ VE AĞIZLI CANLI TOP) */
     #verity-btn {
       left: 24px;
       background: linear-gradient(135deg, #f59e0b, #fbbf24);
@@ -214,7 +248,7 @@
     .ctrl-btn:hover { color: #fff; border-color: var(--accent-yellow); background: rgba(255,255,255,0.15); }
     .close-btn { background: none; border: none; color: var(--text-muted); font-size: 1.2rem; cursor: pointer; }
 
-    /* Verity chat UI */
+    /* Verity demo chat UI */
     .chat-box { height: 230px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; margin-bottom: 10px; padding-right: 4px; }
     .msg-wrapper { display: flex; flex-direction: column; max-width: 88%; }
     .msg-wrapper.bot { align-self: flex-start; }
@@ -241,7 +275,7 @@
     footer { border-top: 1px solid var(--border-color); padding: 2.5rem 0; margin-top: 4rem; text-align: center; color: var(--text-muted); font-size: 0.9rem; }
 
     @media (max-width: 768px) {
-      .grid-3 { grid-template-columns: 1fr; }
+      .grid-3, .grid-games { grid-template-columns: 1fr; }
       .hero-title { font-size: 2.2rem; }
       .nav-container { height: auto; min-height: 70px; padding-top: 0.75rem; padding-bottom: 0.75rem; flex-direction: column; gap: 0.75rem; }
       .nav-links { justify-content: center; flex-wrap: wrap; gap: 0.75rem 1rem; }
@@ -264,8 +298,9 @@
         <span>Nova Mert Ali</span>
       </a>
       <ul class="nav-links">
-        <li><a href="#about">Hakkımda</a></li>
+        <li><a href="#about">Özgeçmiş</a></li>
         <li><a href="#hobbies">Uzmanlıklar</a></li>
+        <li><a href="#games">Web Oyunları</a></li>
         <li><a href="#timer">CFOP Timer</a></li>
         <!-- KANALA BİREBİR BAĞLI YOUTUBE BUTONU -->
         <li>
@@ -289,8 +324,9 @@
       </p>
       <div class="tag-group">
         <span class="tag">🟡 Verity demo asistanı</span>
-        <span class="tag">🎮 sesisi_0 SMP</span>
+        <span class="tag">🎮 Minecraft projeleri</span>
         <span class="tag">🧩 CFOP Speedcuber</span>
+        <span class="tag">🕹️ İnteraktif Web Oyunları</span>
         <span class="tag">🎨 Pixel Artist</span>
         <span class="tag">🎴 Pokémon TCG</span>
       </div>
@@ -299,7 +335,7 @@
     <!-- Özgeçmiş -->
     <section id="about">
       <div class="section-header">
-        <h2 class="section-title">Hakkımda</h2>
+        <h2 class="section-title">Özgeçmiş & Akademik Yolculuk</h2>
         <p class="section-subtitle">Nelerle ilgilendiğime ve üzerinde çalıştığım alanlara göz at</p>
       </div>
 
@@ -353,6 +389,133 @@
       </div>
     </section>
 
+    <!-- FAVORİ WEB OYUNLARI & İNTERAKTİF DENEYİMLER -->
+    <section id="games">
+      <div class="section-header">
+        <h2 class="section-title">Web Oyunları & İnteraktif Deneyimler</h2>
+        <p class="section-subtitle">Tasarım, kodlama mantığı, sanat, refleks ve zeka oyunları</p>
+      </div>
+
+      <div class="grid-games">
+        <div class="card game-card">
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌌</div>
+            <h3 style="font-weight:700; margin-bottom: 0.4rem;">Neal.fun</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">
+              İnteraktif simülasyonlar, eğlenceli tasarım araçları ve yenilikçi web deneyimleri.
+            </p>
+          </div>
+          <a href="https://neal.fun" target="_blank" rel="noopener noreferrer" class="game-btn btn-nealfun">
+            Neal.fun Oyna 🚀
+          </a>
+        </div>
+
+        <div class="card game-card">
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💻</div>
+            <h3 style="font-weight:700; margin-bottom: 0.4rem;">Compute It</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">
+              Klavye ok tuşlarıyla kod okuma, döngüleri çalıştırıp algoritma mantığını geliştirme oyunu.
+            </p>
+          </div>
+          <a href="https://compute-it.toxicode.fr/" target="_blank" rel="noopener noreferrer" class="game-btn btn-computeit">
+            Compute It Oyna ⚡
+          </a>
+        </div>
+
+        <div class="card game-card">
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🛡️</div>
+            <h3 style="font-weight:700; margin-bottom: 0.4rem;">Interland</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">
+              Google'ın dijital güvenlik, şifre koruma ve güvenli internet macera oyunu.
+            </p>
+          </div>
+          <a href="https://beinternetawesome.withgoogle.com/tr_all/interland" target="_blank" rel="noopener noreferrer" class="game-btn btn-interland">
+            Interland Oyna 🌐
+          </a>
+        </div>
+
+        <div class="card game-card">
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧩</div>
+            <h3 style="font-weight:700; margin-bottom: 0.4rem;">Kumika</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">
+              Zeka, strateji ve mantık bulmacaları odaklı popüler web oyunu.
+            </p>
+          </div>
+          <a href="https://bitzoneplay.com/oyunlar/kumika/" target="_blank" rel="noopener noreferrer" class="game-btn btn-kumika">
+            Kumika Oyna 🎯
+          </a>
+        </div>
+
+        <div class="card game-card">
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎵</div>
+            <h3 style="font-weight:700; margin-bottom: 0.4rem;">Blob Opera</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">
+              Google Arts & Culture ile makine öğrenimli opera korosunu yönetme oyunu.
+            </p>
+          </div>
+          <a href="https://artsandculture.google.com/experiment/blob-opera/AAHWrq360NcGbw?hl=en&cp=e30." target="_blank" rel="noopener noreferrer" class="game-btn btn-blob">
+            Blob Opera Oyna 🎤
+          </a>
+        </div>
+
+        <div class="card game-card">
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🗺️</div>
+            <h3 style="font-weight:700; margin-bottom: 0.4rem;">Geo Artwork</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">
+              Dünya haritası üzerinde sanatsal ve kültürel eserleri keşfetme oyunu.
+            </p>
+          </div>
+          <a href="https://artsandculture.google.com/experiment/geo-artwork/wgEPVBAUiRVlEQ?hl=en" target="_blank" rel="noopener noreferrer" class="game-btn btn-geo">
+            Geo Artwork Keşfet 🖼️
+          </a>
+        </div>
+
+        <div class="card game-card">
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏺</div>
+            <h3 style="font-weight:700; margin-bottom: 0.4rem;">3D Pottery</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">
+              3D sanal çömlek ve seramik şekillendirme, tasarlama simülasyon oyunu.
+            </p>
+          </div>
+          <a href="https://artsandculture.google.com/experiment/3d-pottery/nwHg1D0riJ1ltA?hl=en" target="_blank" rel="noopener noreferrer" class="game-btn btn-pottery">
+            3D Pottery Tasarla ✨
+          </a>
+        </div>
+
+        <div class="card game-card">
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎨</div>
+            <h3 style="font-weight:700; margin-bottom: 0.4rem;">Weave Silk</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">
+              Fare hareketleriyle simetrik ve büyüleyici akışkan ışık sanatları oluşturma.
+            </p>
+          </div>
+          <a href="https://weavesilk.com/" target="_blank" rel="noopener noreferrer" class="game-btn btn-silk">
+            Silk Çiz 🪄
+          </a>
+        </div>
+
+        <div class="card game-card">
+          <div>
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
+            <h3 style="font-weight:700; margin-bottom: 0.4rem;">Mouse Accuracy</h3>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">
+              Fare tıklama hızını, nişan alma hassasiyetini ve reflekslerini test etme oyunu.
+            </p>
+          </div>
+          <a href="https://mouseaccuracy.com/" target="_blank" rel="noopener noreferrer" class="game-btn btn-mouse">
+            Refleks Testi Yap 🖱️
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Tur Takipli Rubik Küp Timer -->
     <section id="timer">
       <div class="section-header">
@@ -391,7 +554,7 @@
     </div>
   </footer>
 
-  <!-- SOL ALT KÖŞE: Verity demo asistanı -->
+  <!-- SOL ALT KÖŞE: GELİŞMİŞ SARI TOP VERITY AI -->
   <button id="verity-btn" class="floating-btn" title="Verity site asistanını aç" aria-label="Verity site asistanını aç">
     <div class="yellow-face">
       <div class="eye left"></div>
@@ -431,8 +594,8 @@
     </div>
   </div>
 
-  <!-- SAĞ ALT KÖŞE: Dino mini oyunu -->
-  <button id="dino-btn" class="floating-btn" title="Dino mini oyununu aç" aria-label="Dino mini oyununu aç">🦖</button>
+  <!-- SAĞ ALT KÖŞE: ORİJİNAL CHROME DINO GAME -->
+  <button id="dino-btn" class="floating-btn" title="Google Dino Oyunu">🦖</button>
 
   <div id="dino-modal" class="popup-modal">
     <div class="modal-header">
@@ -526,7 +689,7 @@
 
     // Önceden tanımlı yanıtlar; bu demo harici bir yapay zekâ servisine bağlı değildir.
     const aiEngine = [
-      { keywords: ['kimdir', 'kim', 'nova mert ali', 'biyografi'], reply: 'Nova Mert Ali; yazılım, Minecraft, piksel tasarımı ve Rubik küp projeleriyle ilgileniyor. Bu sayfada kişisel projelerini ve denemelerini paylaşıyor.' },
+      { keywords: ['kimdir', 'kim', 'nova mert ali', 'biyografi'], reply: 'Nova Mert Ali; yazılım, Minecraft, piksel tasarımı, Rubik küp ve interaktif web oyunlarıyla ilgileniyor. Bu sayfada kişisel projelerini ve denemelerini paylaşıyor.' },
       { keywords: ['minecraft', 'smp', 'sesisi_0', 'server'], reply: 'Minecraft modlama, sunucu projeleri ve özel eşya dokuları bu portfolyodaki ilgi alanları arasında.' },
       { keywords: ['rubik', 'küp', 'cfop', 'timer'], reply: 'CFOP Metodu 4 adımdan oluşur: 1. Cross (Haç), 2. F2L (İlk İki Katman), 3. OLL (Üst Sarı Yüzey), 4. PLL (Son Katman Köşe ve Kenarları).' },
       { keywords: ['yazılım', 'kodlama', 'kod', 'python'], reply: 'Yazılım öğrenmek problem çözme yeteneğini geliştirir! HTML, CSS ve JavaScript web siteleri için; Python ve PowerShell ise otomasyon ve mantık betikleri için idealdir.' },
@@ -553,7 +716,10 @@
 
     function handleTranslation(text) {
       let lower = text.toLowerCase();
-      if (lower.includes('çevir') || lower.includes('translation') || lower.includes('tercüme')) {
+      if (lower.startsWith('çevir:') || lower.includes('ingilizceye çevir')) {
+        return 'Bu site asistanı bir demodur; gerçek çeviri hizmeti sunmaz.';
+      }
+      if (lower.includes('almancaya çevir')) {
         return 'Bu site asistanı bir demodur; gerçek çeviri hizmeti sunmaz.';
       }
       return null;
