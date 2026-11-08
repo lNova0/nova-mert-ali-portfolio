@@ -3,7 +3,7 @@
 Nova Mert Ali'nin kişisel portfolyosu. Yazılım, Minecraft, piksel tasarımı,
 Rubik küp ve interaktif web oyunları projelerini içerir.
 
-**Site:** https://lnova0.github.io/
+**Site:** https://lnovaa.github.io/
 
 ## Portfolyo bölümleri
 
