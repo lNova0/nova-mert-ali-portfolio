@@ -1,4 +1,4 @@
-# Nova Mert Ali
+# lnovaa — Nova Mert Ali
 
 Nova Mert Ali'nin kişisel portfolyosu. Yazılım, Minecraft, piksel tasarımı,
 Rubik küp ve interaktif web oyunları projelerini içerir.
