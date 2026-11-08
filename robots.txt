@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lnova0.github.io/nova-mert-ali-portfolio/sitemap.xml
+Sitemap: https://lnova0.github.io/sitemap.xml
